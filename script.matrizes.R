@@ -1,0 +1,57 @@
+# script aula prática de matrizes
+
+# criação de variáveis iniciais - execute esta parte
+v1 <- as.integer(seq(1,16,length.out = 8))
+v2 <- as.integer(c(34,76,12,45,33))
+v3 <- seq(1,8,by = 0.8)
+
+#1.
+print(v1)
+
+
+#2.
+# - matriz _m1_ com os valores do vetor _v1_ com uma única coluna
+
+# - matriz _m2_ com os valores do vetor _v1_ com 2 linhas
+
+# - matriz _m3_ com os valores do vetor _v2_ com 3 colunas
+
+# - matriz _m4_ com os valores do vetor _v1 + v3_ com 4 linhas
+
+
+# 3.  
+# - colocar o valor _15_ na linha 2, coluna 3 da matriz _m2_. Imprimir a matriz depois.
+
+
+# - substituir a linha 2 da matriz _m2_ com os seguintes valores _c(18,20,22,24)_. Imprimir a matriz depois.
+
+
+# - substituir a coluna 3 da matriz _m4_ com os seguintes valores _c(14,4,44,24)_. Imprimir a matriz depois.
+
+
+
+# 
+# 4. 
+# - adicionar uma linha com os valores _c(14,55)_ ao final da matriz _m2_. Imprimir a matriz depois.
+
+
+# - adicionar uma coluna com os valores _c(18,8,88,28)_ como 1a coluna da matriz _m4_. Imprimir a matriz depois.
+
+
+# 
+# 5. 
+# - remover a primeira linha da matriz _m2_. Imprimir a matriz depois.
+
+
+
+# - remover a primeira e a segunda colunas da matriz _m4_. Imprimir a matriz depois.
+
+
+
+# #6. 
+#- trocar a primeira com a segunda linha da matriz _m3_. 
+#    Imprimir a matriz depois. Você deveria obter a nova matriz:
+   
+
+#- trocar a segunda com a terceira coluna da matriz _m3_. Imprimir a matriz depois.
+
