@@ -11,32 +11,44 @@ print(v1)
 
 #2.
 # - matriz _m1_ com os valores do vetor _v1_ com uma única coluna
+m1 <- matrix(c(v1))
+print(m1)
 
 # - matriz _m2_ com os valores do vetor _v1_ com 2 linhas
+m2 =matrix(v1, nrow = 2)
+print(m2)
 
 # - matriz _m3_ com os valores do vetor _v2_ com 3 colunas
+m3 = matrix(v2, ncol = 3)
+print(m3)
 
 # - matriz _m4_ com os valores do vetor _v1 + v3_ com 4 linhas
-
+m4 = matrix(cbind(v1,v3), nrow = 4)
+print(m4)
 
 # 3.  
 # - colocar o valor _15_ na linha 2, coluna 3 da matriz _m2_. Imprimir a matriz depois.
-
+print(m2)
+m2[2,3] <- 15
 
 # - substituir a linha 2 da matriz _m2_ com os seguintes valores _c(18,20,22,24)_. Imprimir a matriz depois.
-
+m2[2,] =  c(18,20,22,24)
+print(m2)
 
 # - substituir a coluna 3 da matriz _m4_ com os seguintes valores _c(14,4,44,24)_. Imprimir a matriz depois.
-
+m4[,3] = c(14,4,44,24)
+print(m4)
 
 
 # 
 # 4. 
 # - adicionar uma linha com os valores _c(14,55)_ ao final da matriz _m2_. Imprimir a matriz depois.
-
+m2 <- rbind(m2,c(14,55))  # rbind() row bind
+print(m2)
 
 # - adicionar uma coluna com os valores _c(18,8,88,28)_ como 1a coluna da matriz _m4_. Imprimir a matriz depois.
-
+m4 = cbind(m4, c(18,8,88,28), ncol=1)
+print(m4)
 
 # 
 # 5. 
