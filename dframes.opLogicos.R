@@ -22,16 +22,7 @@ dados_alunos <- rbind(dados_alunos, dados_alunos_novos)
 print(dados_alunos)
 
 dados_colunaSub <- data.frame(Sub=c(6.5, NA, 5.0, NA, 8.0, NA))
-print(dados_colunaSub)
 dados_alunos <- cbind(dados_alunos, dados_colunaSub)
-print(dados_alunos)
-
-
-dados_linhaSub = data.frame(Nome="Sub", P1= 10, P2= 10, Sub=5)
-dados_alunos = rbind(dados_alunos, dados_linhaSub)
-print(dados_alunos)
-
-dados_alunos = dados_alunos[-7, ]
 print(dados_alunos)
 
 
@@ -41,7 +32,7 @@ print(dados_alunos)
 alunos_p1 <- subset(dados_alunos, dados_alunos$P1 >= 8)
 print(alunos_p1)
 
-alunos_p1<-subset(dados_alunos, !(dados_alunos$P1 >= 8)) #dados da p1 menores que 8, if not
+alunos_p1<-subset(dados_alunos, !(dados_alunos$P1 >= 8))
 print(alunos_p1)
 
 alunos_p1<- subset(dados_alunos, dados_alunos$P1 >= 3 & 
@@ -123,7 +114,7 @@ is.na(colRec)     # quais são NA?
 
 # função is.na() aplicada a data-frames
 
-subset(dados_alunos, is.na(dados_alunos$Rec))
+subset(dados_alunos, is.na(dados_alunos$Rec | ))
 
 subset(dados_alunos, !(is.na(dados_alunos$Rec)))
 

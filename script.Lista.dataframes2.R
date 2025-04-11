@@ -2,11 +2,15 @@
 
 # 1. 
 # lê e imprime a planilha
-dadosalunos <- read.csv(file = "alunosnotas.csv", 
+dadosalunos <- read.csv(file = "alunosnotas.csv", header = TRUE)
                          ... Complete ...)  # lê a planilha com cabeçalho
 print(dadosalunos)
 
 # confere se a variável é um data-frame
+
+typeof(dadosalunos)
+is.data.frame(dadosalunos)
+
 
 
 # 2.
@@ -43,9 +47,12 @@ print(dadosalunos$P2)
 dadosalunos$P1 > dadosalunos$P2
 
 #b. selecione o subconjunto de notas da P1 que foram maiores que as notas da P2:
-
+subset(dadosalunos, dadosalunos$P1 > dadosalunos$P2)
+subset(dadosalunos$P1, dadosalunos$P1 > dadosalunos$P2)
 
 #c. elabore a expressão lógica que compara se a nota da Sub é menor que as notas da P2 ou da P1:
+subset(dadosalunos, dadosalunos$P2 | dadosalunos$P1 > dados )
+
 
 #d. selecione o subconjunto de notas Sub que são menores que as notas da P2 ou da P1:
 
